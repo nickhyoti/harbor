@@ -416,7 +416,7 @@ Should be Accessory deleted
 Export CVEs
     [Arguments]  ${project}  ${repositories}  ${tags}  ${labels}  ${cve_ids}
     Filter Project  ${project}
-    Retry Element Click  //clr-dg-row[contains(.,'${project}')]//div[contains(@class,'clr-checkbox-wrapper')]//label[contains(@class,'clr-control-label')]
+    Retry Element Click  //clr-dg-row//clr-dg-cell[contains(.,'${project}')]/../../..//clr-checkbox-wrapper/label[contains(@class, 'clr-control-label')] 
     Retry Element Click  ${project_action_xpath}
     Retry Button Click  ${export_cve_btn}
     Retry Text Input  ${export_cve_filter_repo_input}  ${repositories}
