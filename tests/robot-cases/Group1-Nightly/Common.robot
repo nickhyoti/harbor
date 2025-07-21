@@ -81,6 +81,7 @@ Test Case - Create An New Project
     Close Browser
 
 Test Case - Delete A Project
+    [Tags]  delete_project
     Init Chrome Driver
     Sign In Harbor  ${HARBOR_URL}  ${HARBOR_ADMIN}  ${HARBOR_PASSWORD}
     Delete A Project Without Sign In Harbor
