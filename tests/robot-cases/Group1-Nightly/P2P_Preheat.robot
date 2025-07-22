@@ -23,6 +23,7 @@ ${HARBOR_ADMIN}  admin
 
 *** Test Cases ***
 Test Case - Distribution CRUD
+    [Tags] distribution_crud
     ${d}=    Get Current Date    result_format=%m%s
     ${name}=  Set Variable  distribution${d}
     ${endpoint}=  Set Variable  https://32.1.1.2

@@ -11,6 +11,7 @@ ip = "<harbor ip address or fqdn>"
 # fixed value, do not change
 LOCAL_REGISTRY =  "registry.goharbor.io" 
 LOCAL_REGISTRY_NAMESPACE =   "harbor-ci" 
+HARBOR_ADMIN = "admin"
 HARBOR_PASSWORD =   "Harbor12345"
 OIDC_HOSTNAME =  "nightly-oidc.harbor.io" 
 http_get_ca =  "true" 
